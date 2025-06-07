@@ -1,0 +1,14 @@
+{
+  "name": "sameerbehera",
+  "version": "1.0.0",
+  "description": "this is my nodejs course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sameer",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
