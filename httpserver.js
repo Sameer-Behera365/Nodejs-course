@@ -24,8 +24,9 @@ res.setHeader("Content-Type", "text/html");
 
 in this If I write just "text/html" somewhere, but don’t use "Content-Type" as a header name  then ❌ it will NOT work.
 because The browser only understands headers in key-value format like this:  res.setHeader("Content-Type", "text/html");
------"Content-Type" is the key.
------"text/html" is the value.
+
+----->"Content-Type" is the key.
+----->"text/html" is the value.
 
 
 remember :---u need to mention the content type so that browser understand what type of content u are sending so that it will do proper rendering and display the content as u want like :----- i want in html way so it will display in that way   else it will display as plain text

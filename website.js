@@ -105,7 +105,6 @@ It does NOT include the protocol (http://) or hostname (localhost), or port.
 It is  simply the  path the user is requesting on your server.
 
 ========================================================================================================================================================================
-
 */
 
 
@@ -113,7 +112,7 @@ It is  simply the  path the user is requesting on your server.
 
 
 
-/// now this is basically the same project but we dont use hard coded values instead we use the data from other files 
+/// now this is basically the same project but we dont use hard coded values instead we use the data from other files like    index.html    and     Link.html
 
 
 
@@ -139,7 +138,7 @@ const server = http.createServer((req, res) => {
   else if (req.url == "/About") 
   {
     res.statusCode = 200;
-    const data = fs.readFileSync("index.html");
+    const data = fs.readFileSync("index.html");    //reading the file
     res.end(data.toString());
   } 
   
@@ -156,7 +155,6 @@ const server = http.createServer((req, res) => {
   
   else 
   {
-    // res.calljn();
     res.statusCode = 404;
     res.end("<h1> 404 Not Found </h1>  ");
   }
