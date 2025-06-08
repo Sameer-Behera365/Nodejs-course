@@ -24,7 +24,7 @@ const http = require("http");  // Import HTTP module
 const port = process.env.PORT || 3000;  // Define the port
 
 const server = http.createServer((req, res) => {
-  console.log(req.url);  // requested url is displayesd like on which page user is navigating
+  console.log(req.url);  // requested url is displayesd like on which page user is at present now
 
   res.setHeader("Content-Type", "text/html");  // Set response type as HTML
 
@@ -81,3 +81,18 @@ const server = http.createServer((req, res) => {
 server.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 });
+
+
+
+
+
+/*
+
+📌 In Simple Words:   use of backticks(``)
+Symbol                 	Can write in many lines?	      Can use variables like ${name}?
+' or " (quotes)	               ❌ No	                     ❌ No
+` ` (backticks)	               ✅ Yes	                 ✅ Yes
+
+
+*/
+
