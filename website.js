@@ -1,5 +1,9 @@
 //a samll project on routing
+
 /*
+
+
+
 If you open:
 🔗 http://localhost:3000/ → You see the Home Page
 
@@ -12,6 +16,26 @@ If you open:
 If you open anything else (like /xyz):
 ❌ You see a 404 Not Found Page
 
+
+
+==========================================================================================
+
+📌 In Simple Words:   use of backticks(``)
+Symbol                 	Can write in many lines?	      Can use variables like ${name}?
+' or " (quotes)	               ❌ No	                     ❌ No
+` ` (backticks)	               ✅ Yes	                 ✅ Yes
+
+
+
+===========================================================================================
+
+
+🔍 What is req.url?  (http://localhost:3000/)
+req.url returns the path part of the URL that comes after the domain and port.
+
+It does NOT include the protocol (http://) or hostname (localhost), or port.
+
+It is  simply the  path the user is requesting on your server.
 
 */
 
@@ -37,8 +61,6 @@ const server = http.createServer((req, res) => {
   } 
 
 
-
-  
   else if (req.url === "/About") {
     res.statusCode = 200;
     res.end(`
@@ -47,10 +69,7 @@ const server = http.createServer((req, res) => {
     `);
   } 
   
-  
-  
-  
-  
+
   else if (req.url === "/Link") {
     res.statusCode = 200;
     res.end(`
@@ -62,8 +81,6 @@ const server = http.createServer((req, res) => {
       </ul>
     `);
   } 
-  
-  
   
   
   else 
@@ -82,17 +99,4 @@ server.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 });
 
-
-
-
-
-/*
-
-📌 In Simple Words:   use of backticks(``)
-Symbol                 	Can write in many lines?	      Can use variables like ${name}?
-' or " (quotes)	               ❌ No	                     ❌ No
-` ` (backticks)	               ✅ Yes	                 ✅ Yes
-
-
-*/
 
