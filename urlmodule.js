@@ -9,17 +9,17 @@
 
 
 // // ✅ Now use URL safely
-// const myURL1 = new URL('https://example.com');   //making my own url
+// const myURL1 = new URL('https://example.com');     //making my own url
 // myURL1.pathname = '/users';
 // myURL1.searchParams.set('id', 123);
-// console.log(myURL1.href); // https://example.com/users?id=123
+// console.log(myURL1.href);                  // https://example.com/users?id=123
 
 // const myURL2 = new URL('https://example.com:8080/path?name=munna#top');
-// console.log(myURL2.hostname);  // example.com
-// console.log(myURL2.port);      // 8080
-// console.log(myURL2.pathname);  // /path
-// console.log(myURL2.search);    // ?name=munna
-// console.log(myURL2.hash);      // #top
+// console.log(myURL2.hostname);            // example.com
+// console.log(myURL2.port);                 // 8080
+// console.log(myURL2.pathname);            // /path
+// console.log(myURL2.search);              // ?name=munna
+// console.log(myURL2.hash);                 // #top
 
 
 
