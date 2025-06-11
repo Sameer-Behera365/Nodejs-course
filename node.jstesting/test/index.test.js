@@ -150,7 +150,7 @@ Your test might appear to pass or fail incorrectly, because Jest missed the Prom
 
 
 test("promiseTest",() => {                          //failed
-  return promiseTest(1, 2)                             // i used return to prevent errors  
+  return promiseTest(1, 2)                             // i used return to prevent errors    or u can use await here
     .then((data) => {
       expect(data).toBe("+ve");
     })
